@@ -1,9 +1,13 @@
-% base on the file by Rob J Hyndman (http://robjhyndman.com/hyndsight/biblatex-for-statisticians/)
 % Load the package
 \ProvidesPackage{stats}[2014/08/22 v1.0 Common macros for statistics]
+
+\RequirePackage{amssymb}
+\RequirePackage{amsmath}
 
 \newcommand{\argmax}[1]{\underset{#1}{\operatorname{arg}\,\operatorname{max}}\;}
 \newcommand{\E}[1]{\mathbb{E}\left({#1}\right)}
 \newcommand{\Var}[1]{\text{Var}({#1})}
 \newcommand{\Cov}[1]{\text{Cov}({#1})}
 \newcommand{\p}[1]{\text{p}\left({#1}\right)}
+% Shortcut for a Normal distribution. Usage ex.: \N{0}{\sigma}
+\newcommand{\N}[2]{\mathcal{N} \sim \left( #1,#2 \right) }
