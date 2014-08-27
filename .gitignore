@@ -1,5 +1,4 @@
 *.aux
 /latexcommon.log
-/latexcommon.pdf
 /latexcommon.synctex.gz
 /texput.log
