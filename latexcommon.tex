@@ -58,17 +58,31 @@ Will generate
 
 \[ x \DistGamma{\alpha}{\beta} \]
 
-\subsubsection{\texttt{\textbackslash DistInvGamma}, Inverse Gamma}
+\subsubsection{\texttt{\textbackslash DistIG}, Inverse Gamma}
 
 Generates an Inverse Gamma distribution with two parameters (shape, scale).
 As an example,
 
 \begin{lstlisting}[language=TeX]
-x \DistInvGamma{\alpha}{\beta}
+x \DistIG{\alpha}{\beta}
 \end{lstlisting}
 
 Will generate
 
-\[ x \DistInvGamma{\alpha}{\beta} \]
+\[ x \DistIG{\alpha}{\beta} \]
+
+\section{Notation}
+
+\subsection{Probabilities}
+
+\subsubsection{\texttt{\textbackslash pcond}, Conditional probabilities}
+
+\begin{lstlisting}[language=TeX]
+\pcond{\theta_t}{\theta_{t-1},\Phi} \DistInvGamma{\alpha}{\beta}
+\end{lstlisting}
+
+Will generate
+
+\[ \pcond{\theta_t}{\theta_{t-1},\Phi} \DistIG{\alpha}{\beta} \]
 
 \end{document}
